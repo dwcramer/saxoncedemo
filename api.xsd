@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xslt/schema.xslt"?>
+
+<!-- (C) 2009 Rackspace Hosting, All Rights Reserved -->
+
+
+<schema
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:csapi="http://docs.rackspacecloud.com/servers/api/v1.0"
+    xmlns:xsdxt="http://docs.rackspacecloud.com/xsd-ext/v1.0"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://docs.rackspacecloud.com/servers/api/v1.0"
+>
+  <annotation>
+    <xsd:appinfo
+        xml:lang="EN"
+        xmlns="http://www.w3.org/1999/xhtml">
+      <xsdxt:title>Cloud Servers&#x2122; API Schema Types</xsdxt:title>
+      <xsdxt:link rev="index" href="xsd/actions.xsd" />
+      <xsdxt:link rev="index" href="xsd/backup.xsd" />
+      <xsdxt:link rev="index" href="xsd/common.xsd" />
+      <xsdxt:link rev="index" href="xsd/faults.xsd" />
+      <xsdxt:link rev="index" href="xsd/flavor.xsd" />
+      <xsdxt:link rev="index" href="xsd/image.xsd" />
+      <xsdxt:link rev="index" href="xsd/ipgroup.xsd" />
+      <xsdxt:link rev="index" href="xsd/limits.xsd" />
+      <xsdxt:link rev="index" href="xsd/server.xsd" />
+      <xsdxt:link rev="index" href="xsd/version.xsd" />
+    </xsd:appinfo>
+    <xsd:documentation
+        xml:lang="EN"
+        xmlns="http://www.w3.org/1999/xhtml">
+      <p>
+        This is the main index XML Schema document
+        for the Cloud Servers API.
+      </p>
+    </xsd:documentation>
+  </annotation>
+  <include schemaLocation="xsd/server.xsd">
+    <annotation>
+      <xsd:documentation
+          xml:lang="EN"
+          xmlns="http://www.w3.org/1999/xhtml">
+        <p>
+          Servers and all internal Entities including: Addresses,
+          Files, and MetaData.
+        </p>
+      </xsd:documentation>
+    </annotation>
+  </include>
+  <include schemaLocation="xsd/image.xsd">
+    <annotation>
+      <xsd:documentation
+          xml:lang="EN"
+          xmlns="http://www.w3.org/1999/xhtml">
+        <p>
+          Types related to images.
+        </p>
+      </xsd:documentation>
+    </annotation>
+  </include>
+  <include schemaLocation="xsd/flavor.xsd">
+    <annotation>
+      <xsd:documentation
+          xml:lang="EN"
+          xmlns="http://www.w3.org/1999/xhtml">
+        <p>
+          Types related to flavors.
+        </p>
+      </xsd:documentation>
+    </annotation>
+  </include>
+  <include schemaLocation="xsd/ipgroup.xsd">
+    <annotation>
+      <xsd:documentation
+          xml:lang="EN"
+          xmlns="http://www.w3.org/1999/xhtml">
+        <p>
+          Types related to shared IP groups.
+        </p>
+      </xsd:documentation>
+    </annotation>
+  </include>
+  <include schemaLocation="xsd/backup.xsd">
+    <annotation>
+      <xsd:documentation
+          xml:lang="EN"
+          xmlns="http://www.w3.org/1999/xhtml">
+        <p>
+          Types related to backup schedules.
+        </p>
+      </xsd:documentation>
+    </annotation>
+  </include>
+  <include schemaLocation="xsd/actions.xsd">
+    <annotation>
+      <xsd:documentation
+          xml:lang="EN"
+          xmlns="http://www.w3.org/1999/xhtml">
+        <p>
+          Defines server actions: reboot, rebuild, resize...
+        </p>
+      </xsd:documentation>
+    </annotation>
+  </include>
+  <include schemaLocation="xsd/faults.xsd">
+    <annotation>
+      <xsd:documentation
+          xml:lang="EN"
+          xmlns="http://www.w3.org/1999/xhtml">
+        <p>
+          All fault types.
+        </p>
+      </xsd:documentation>
+    </annotation>
+  </include>
+  <include schemaLocation="xsd/limits.xsd">
+    <annotation>
+      <xsd:documentation
+          xml:lang="EN"
+          xmlns="http://www.w3.org/1999/xhtml">
+        <p>
+          Types related to rate and absolute limits.
+        </p>
+      </xsd:documentation>
+    </annotation>
+  </include>
+  <include schemaLocation="xsd/version.xsd">
+    <annotation>
+      <xsd:documentation
+          xml:lang="EN"
+          xmlns="http://www.w3.org/1999/xhtml">
+        <p>
+          Types related to API version details.
+        </p>
+      </xsd:documentation>
+    </annotation>
+  </include>
+</schema>
